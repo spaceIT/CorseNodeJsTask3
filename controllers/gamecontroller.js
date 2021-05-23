@@ -47,7 +47,7 @@ router.post('/create', (req, res) => {
     })
         .then(
             function createSuccess(game) {
-                res.status(200).json({
+                res.status(201).json({
                     game: game,
                     message: "Game created."
                 })
