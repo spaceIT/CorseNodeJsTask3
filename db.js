@@ -1,4 +1,3 @@
-require('dotenv').config()
 const Sequelize = require('sequelize');
 //database username   password
 const sequelize = new Sequelize(
@@ -20,3 +19,5 @@ sequelize.authenticate().then(
         console.log(`Error: ${err}`);
     }
 )
+
+module.exports = sequelize
