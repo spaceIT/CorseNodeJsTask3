@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
-                                //database username   password
-const sequelize = new Sequelize('gamedb', 'postgres', 'ghastb0i', {
+//database username   password
+const sequelize = new Sequelize('gamedb', 'postgres', 'Andr6y1Sto', {
+    dialect: 'postgres',
     host: 'localhost',
-    dialect: 'postgres'
 })
 
 sequelize.authenticate().then(
