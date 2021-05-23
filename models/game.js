@@ -7,7 +7,7 @@ module.exports = function (sequelize, DataTypes) {
 
         owner_id: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: false,
         },
 
         studio: {
@@ -25,14 +25,14 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
             validate: {
                 min: 1,
-                max: 5
-            }
+                max: 5,
+            },
         },
 
         have_played: {
             type: DataTypes.BOOLEAN,
             defaultValue: false,
-            allowNull: false
-        }
+            allowNull: false,
+        },
     })
 }
